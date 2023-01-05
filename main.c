@@ -13,15 +13,15 @@ int main() {
 	int x_position = SCREEN_WIDTH / 2;
 	int y_position = SCREEN_HEIGHT / 2;
 
-	int x_speed = 10;
-	int y_speed = 10;
+	int x_speed = 1;
+	int y_speed = 1;
 	printf("%d", dvd_logo.width);
 
 	while (!WindowShouldClose()) {
-		ClearBackground(WHITE);
+		ClearBackground(GRAY);
 
 		BeginDrawing();
-			DrawTexture(dvd_logo, x_position, y_position, BLACK);
+			DrawTexture(dvd_logo, x_position, y_position, WHITE);
 		EndDrawing();
 
 		if (x_position + dvd_logo.width >= SCREEN_WIDTH) {
