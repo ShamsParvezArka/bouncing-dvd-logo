@@ -10,11 +10,12 @@ int main() {
 
 	Texture2D dvd_logo = LoadTexture("assets/dvd.png");
 
-	int x_position = SCREEN_WIDTH / 2;
-	int y_position = SCREEN_HEIGHT / 2;
+	int x_position = 10;
+	int y_position = 10;
 
 	int x_speed = 8;
 	int y_speed = 8;
+	printf("%d", dvd_logo.width);
 
 	while (!WindowShouldClose()) {
 		ClearBackground(WHITE);
@@ -24,12 +25,12 @@ int main() {
 		EndDrawing();
 
 		if (
-				(x_position + dvd_logo.width >= SCREEN_HEIGHT) || 
+				((x_position + dvd_logo.width) >= SCREEN_WIDTH) || 
 				(x_position <= 0)) {
 			x_speed = - x_speed;
 		}
 		else if (
-				(y_position + dvd_logo.height >= SCREEN_HEIGHT) || 
+				((y_position + dvd_logo.height) >= SCREEN_HEIGHT) || 
 				(y_position <= 0)) {
 			y_speed = - y_speed;
 		}
