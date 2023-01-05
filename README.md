@@ -1,6 +1,4 @@
-<div align="center">
-  <h1>That DVD logo<h1>
-</dev>
+<h1 align="center">That DVD logo<h1>
 
 ### Pre-requirements
 Compiler: <a href="https://gcc.gnu.org"><b>gcc</b></a> <br>
